@@ -1,0 +1,15 @@
+# c_zamea
+
+# County Title
+title = c_zamea
+
+# Settlements
+max_settlements = 1
+
+b_zamea = castle
+
+# Misc
+culture = irish
+religion = catholic
+
+#History

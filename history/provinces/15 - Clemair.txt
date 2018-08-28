@@ -1,0 +1,15 @@
+# c_clemair
+
+# County Title
+title = c_clemair
+
+# Settlements
+max_settlements = 1
+
+b_clemair = castle
+
+# Misc
+culture = irish
+religion = catholic
+
+#History

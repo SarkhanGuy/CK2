@@ -1,0 +1,15 @@
+# c_huanme
+
+# County Title
+title = c_huanme
+
+# Settlements
+max_settlements = 1
+
+b_huanme = castle
+
+# Misc
+culture = irish
+religion = catholic
+
+#History

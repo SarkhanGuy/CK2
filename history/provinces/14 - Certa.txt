@@ -1,0 +1,15 @@
+# c_certa
+
+# County Title
+title = c_certa
+
+# Settlements
+max_settlements = 1
+
+b_certa = castle
+
+# Misc
+culture = irish
+religion = catholic
+
+#History

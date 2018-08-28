@@ -1,0 +1,10 @@
+1 = {
+    name=William
+    dynasty=740
+  
+    religion=catholic
+    culture=irish
+  
+    750.01.15 = { birth=yes }
+    790.09.09 = { death=yes }
+}

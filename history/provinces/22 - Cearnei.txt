@@ -1,0 +1,15 @@
+# c_cearnei
+
+# County Title
+title = c_cearnei
+
+# Settlements
+max_settlements = 1
+
+b_cearnei = castle
+
+# Misc
+culture = irish
+religion = catholic
+
+#History

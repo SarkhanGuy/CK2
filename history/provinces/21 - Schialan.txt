@@ -1,0 +1,15 @@
+# c_schialan
+
+# County Title
+title = c_schialan
+
+# Settlements
+max_settlements = 1
+
+b_schialan = castle
+
+# Misc
+culture = irish
+religion = catholic
+
+#History

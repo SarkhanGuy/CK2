@@ -1,0 +1,15 @@
+# c_auarua
+
+# County Title
+title = c_auarua
+
+# Settlements
+max_settlements = 1
+
+b_auarua = castle
+
+# Misc
+culture = irish
+religion = catholic
+
+#History

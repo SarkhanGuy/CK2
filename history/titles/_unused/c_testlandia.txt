@@ -1,0 +1,9 @@
+# e_testempire
+500.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+769.1.1={
+	liege=k_testkingdom
+}
+769.1.1={holder=1}
