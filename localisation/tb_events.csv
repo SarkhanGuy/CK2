@@ -1,0 +1,13 @@
+EVTDESCLJE.1;You wake up, feeling as if something was very, very wrong. As you exit your room, you notice that the walls are covered in strange evil glyphs, painted, upon closer inspection, in blood. You hear a scream nearby, followed by an evil laugh.;;;;;;;;;;;x
+EVTOPTLJE.1;Rush towards the scream!;;;;;;;;;;;x
+EVTDESCLJE.2;Running down the hallway, you see a terrible sight. A terrible demon is about to kill a helpless servant! You notice an axe was conveniently left against the wall near you. The demon hasn't noticed you yet, but the servant is running out of time.;;;;;;;;;;;x
+EVTOPTLJE.2a;Rip and Tear!;;;;;;;;;;;x
+EVTOPTLJE.2b;I must kill the demon!;;;;;;;;;;;x
+EVTDESCLJE.3;You brutally slay the foul demon where it stands even as the servant runs away screaming in panic. Drenched in gore, you savour your heroic victory over the forces of evil.;;;;;;;;;;;x
+EVTOPTLJE.3;Suffer not the demon to live!;;;;;;;;;;;x
+EVTDESCLJE.4;Soon the other servants and courtiers find you, still standing triumphant over the demon's corpse. They seem shocked and appalled, asking how could you do such a thing.;;;;;;;;;;;x
+EVTOPTLJE.4;But... but I saved you all!;;;;;;;;;;;x
+EVTDESCLJE.5;It's brought to your attention that [From.GetBestName] has gone on a mad rampage that resulted in the death of at least one of the guards. You find [From.GetHerHim] standing over the corpse of the victim, drenched in gore and claiming that the poor guard was a demon!;;;;;;;;;;;x
+EVTOPTLJE.5a;Arrest this monster!;;;;;;;;;;;x
+EVTOPTLJE.5b;I want this lunatic out of my land now!;;;;;;;;;;;x
+EVTOPTLJE.5c;Maybe the guard really was a demon... well done!;;;;;;;;;;;x

@@ -1,0 +1,5 @@
+on_yearly_pulse = {
+	random_events = {
+		10 = lunjkevt.1
+	}
+}
