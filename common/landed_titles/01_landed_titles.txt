@@ -1,0 +1,207 @@
+###### AUTO GENERATED CONTENT (c) CKTools v19 ######
+
+
+
+e_xanthe_terra = {
+	color={ 215 225 46 }
+	color2={ 255 255 20 }
+	
+	capital = 1 # c_emuna
+	culture = irish
+	
+	k_xantha = {
+		color={ 225 215 51 }
+		color2={ 255 255 255 }
+		
+		capital = 1 # c_emuna
+		culture = irish
+		
+		c_aome = { # 17
+			color={ 142 110 55 }
+			color2={ 255 255 255 }
+			
+			b_aome = {
+			}
+		}
+		d_valliana = {
+			color={ 245 195 61 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1 province_id = 10 province_id = 11 province_id = 12 province_id = 14 } }
+				}
+			}
+			capital = 1 # c_emuna
+			
+			c_emuna = { # 1
+				color={ 255 185 66 }
+				color2={ 255 255 255 }
+				
+				b_emuna = {
+				}
+			}
+			c_certa = { # 14
+				color={ 133 82 37 }
+				color2={ 255 255 255 }
+				
+				b_certa = {
+				}
+			}
+			c_huanme = { # 11
+				color={ 165 118 36 }
+				color2={ 255 255 255 }
+				
+				b_huanme = {
+				}
+			}
+			c_malandi = { # 12
+				color={ 112 91 56 }
+				color2={ 255 255 255 }
+				
+				b_malandi = {
+				}
+			}
+			c_tekana = { # 10
+				color={ 247 148 59 }
+				color2={ 255 255 255 }
+				
+				b_tekana = {
+				}
+			}
+		}
+		d_caelum = {
+			color={ 134 71 12 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 13 province_id = 15 province_id = 16 province_id = 17 } }
+				}
+			}
+			capital = 13 # c_denema
+			
+			c_denema = { # 13
+				color={ 124 81 7 }
+				color2={ 255 255 255 }
+				
+				b_denema = {
+				}
+			}
+			c_aome = { # 17
+				color={ 142 110 55 }
+				color2={ 255 255 255 }
+				
+				b_aome = {
+				}
+			}
+			c_clemair = { # 15
+				color={ 228 210 138 }
+				color2={ 255 255 255 }
+				
+				b_clemair = {
+				}
+			}
+			c_diripia = { # 16
+				color={ 198 174 80 }
+				color2={ 255 255 255 }
+				
+				b_diripia = {
+				}
+			}
+		}
+	}
+	k_hydraotes = {
+		color={ 213 17 44 }
+		color2={ 255 255 255 }
+		
+		capital = 18 # c_zamea
+		culture = irish
+		
+		c_zamea = { # 18
+			color={ 243 243 59 }
+			color2={ 255 255 255 }
+			
+			b_zamea = {
+			}
+		}
+		c_auarua = { # 19
+			color={ 231 195 125 }
+			color2={ 255 255 255 }
+			
+			b_auarua = {
+			}
+		}
+		c_becquena = { # 20
+			color={ 186 166 46 }
+			color2={ 255 255 255 }
+			
+			b_becquena = {
+			}
+		}
+		c_cearnei = { # 22
+			color={ 236 215 83 }
+			color2={ 255 255 255 }
+			
+			b_cearnei = {
+			}
+		}
+		c_schialan = { # 21
+			color={ 236 151 68 }
+			color2={ 255 255 255 }
+			
+			b_schialan = {
+			}
+		}
+		d_lamea = {
+			color={ 233 253 54 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 18 province_id = 19 province_id = 20 province_id = 21 province_id = 22 } }
+				}
+			}
+			capital = 18 # c_zamea
+			
+			c_zamea = { # 18
+				color={ 243 243 59 }
+				color2={ 255 255 255 }
+				
+				b_zamea = {
+				}
+			}
+			c_auarua = { # 19
+				color={ 231 195 125 }
+				color2={ 255 255 255 }
+				
+				b_auarua = {
+				}
+			}
+			c_becquena = { # 20
+				color={ 186 166 46 }
+				color2={ 255 255 255 }
+				
+				b_becquena = {
+				}
+			}
+			c_cearnei = { # 22
+				color={ 236 215 83 }
+				color2={ 255 255 255 }
+				
+				b_cearnei = {
+				}
+			}
+			c_schialan = { # 21
+				color={ 236 151 68 }
+				color2={ 255 255 255 }
+				
+				b_schialan = {
+				}
+			}
+		}
+	}
+}
