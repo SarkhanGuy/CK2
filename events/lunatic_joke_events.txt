@@ -1,0 +1,229 @@
+namespace = lunjkevt
+
+character_event = { # Fires from on_yearly_pulse, but low chance
+	id = lunjkevt.1
+	desc = EVTDESClunjkevt.1 # You wake up, feeling as if something was very, very wrong. As you exit your room, you notice that the walls are covered in strange evil glyphs, painted, upon closer inspection, in blood. You hear a scream nearby, followed by an evil laugh.
+	picture = GFX_evt_uncomfortable
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	only_capable = yes
+	prisoner = no
+	min_age = 16
+	
+	trigger = {
+		trait = lunatic
+		NOT = { trait = craven }
+		#If there ever is a satanist-style society, being part of it will disqualify the character
+		OR = {
+			AND = {
+				is_landed = yes
+				is_nomadic = no
+			}
+			AND = {
+				is_landed = no
+				liege = {
+					is_nomadic = no
+				}
+			}
+		}
+	}
+	
+	weight_multiplier = {
+		years = 100
+		modifier = {
+			factor = 3
+			combat_rating = 2
+			NOT = { combat_rating = 3 }
+		}
+		modifier = {
+			factor = 4
+			combat_rating = 3
+			NOT = { combat_rating = 4 }
+		}
+		modifier = {
+			factor = 5
+			combat_rating = 4
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 2
+			trait = wroth
+		}
+		modifier = {
+			factor = 4
+			trait = berserker
+		}
+		modifier = {
+			factor = 3
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.1
+			is_landed = no
+		}
+	}
+	
+	option = {
+		name = EVTOPTlunjkevt.1 # Rush towards the scream!
+		character_event = { id = lunjkevt.2 }
+	}
+}
+
+character_event = {
+	id = lunjkevt.2
+	desc = EVTDESClunjkevt.2 # Running down the hallway, you see a terrible sight. A terrible demon is about to kill a helpless servant! You notice an axe was conveniently left against the wall near you. The demon hasn't noticed you yet, but the servant is running out of time.
+	picture = GFX_evt_magic_ritual
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTlunjkevt.2a # Rip and Tear!
+		random = {
+			chance = 25
+			add_trait = berserker
+		}
+		random = {
+			chance = 50
+			add_trait = wroth
+		}
+		character_event = { id = lunjkevt.3 }
+	}
+	
+	option = {
+		name = EVTOPTlunjkevt.2b # I must kill the demon!
+		random = {
+			chance = 30
+			add_trait = brave
+		}
+		random = {
+			chance = 15
+			add_trait = zealous
+		}
+		character_event = { id = lunjkevt.3 }
+	}
+}
+
+character_event = {
+	id = lunjkevt.3
+	desc = EVTDESClunjkevt.3 # You brutally slay the foul demon where it stands even as the servant runs away screaming in panic. Drenched in gore, you savour your heroic victory over the forces of evil.
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTlunjkevt.3 # Suffer not the demon to live!
+		if = {
+			limit = {
+				is_landed = yes
+			}
+			character_event = { id = lunjkevt.4 }
+		}
+		if = {
+			limit = {
+				is_landed = no
+			}
+			liege = { character_event = { id = lunjkevt.5 } }
+		}
+	}
+}
+
+character_event = {
+	id = lunjkevt.4
+	desc = EVTDESClunjkevt.4 # Soon the other servants and courtiers find you, still standing triumphant over the demon's corpse. They seem shocked and apalled, asking how could you do such a thing.
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTlunjkevt.4 # But... but I saved you all!
+		any_courtier_or_vassal = {
+			opinion = {
+				modifier = evil_murderer
+				who = ROOT
+				years = 15
+			}
+		}
+	}
+}
+
+character_event = {
+	id = lunjkevt.5
+	desc = EVTDESClunjkevt.5 # It's brought to your attention that [From.GetBestName] has gone on a mad rampage that resulted in the death of at least one of the guards. You find [From.GetHerHim] standing over the corpse of the victim, drenched in gore and claiming that the poor guard was a demon!
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTlunjkevt.5a # Arrest this monster!
+		FROM = {
+			imprison = PREV
+			any_courtier_or_vassal = {
+				opinion = {
+					modifier = evil_murderer
+					who = PREV
+					years = 15
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTlunjkevt.5b # I want this lunatic out of my land now!
+		FROM = {
+			banish = yes
+			any_courtier_or_vassal = {
+				opinion = {
+					modifier = evil_murderer
+					who = PREV
+					years = 15
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				trait = paranoid
+				trait = lunatic
+			}
+		}
+		name = EVTOPTlunjkevt.5c # Maybe the guard really was a demon... well done!
+		any_courtier = {
+			limit = {
+				NOT = { character = FROM }
+			}
+			opinion = {
+				modifier = opinion_shocked
+				who = PREV
+				years = 2
+			}
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_pleased
+				who = PREV
+				years = 10
+			}
+			any_courtier_or_vassal = {
+				limit = {
+					NOT = { character = PREVPREV }
+				}
+				opinion = {
+					modifier = evil_murderer
+					who = PREV
+					years = 15
+				}
+			}
+		}
+	}
+}
