@@ -16,13 +16,6 @@ e_xanthe_terra = {
 		capital = 1 # c_emuna
 		culture = irish
 		
-		c_aome = { # 17
-			color={ 142 110 55 }
-			color2={ 255 255 255 }
-			
-			b_aome = {
-			}
-		}
 		d_valliana = {
 			color={ 245 195 61 }
 			color2={ 255 255 255 }
@@ -120,41 +113,6 @@ e_xanthe_terra = {
 		capital = 18 # c_zamea
 		culture = irish
 		
-		c_zamea = { # 18
-			color={ 243 243 59 }
-			color2={ 255 255 255 }
-			
-			b_zamea = {
-			}
-		}
-		c_auarua = { # 19
-			color={ 231 195 125 }
-			color2={ 255 255 255 }
-			
-			b_auarua = {
-			}
-		}
-		c_becquena = { # 20
-			color={ 186 166 46 }
-			color2={ 255 255 255 }
-			
-			b_becquena = {
-			}
-		}
-		c_cearnei = { # 22
-			color={ 236 215 83 }
-			color2={ 255 255 255 }
-			
-			b_cearnei = {
-			}
-		}
-		c_schialan = { # 21
-			color={ 236 151 68 }
-			color2={ 255 255 255 }
-			
-			b_schialan = {
-			}
-		}
 		d_lamea = {
 			color={ 233 253 54 }
 			color2={ 255 255 255 }
@@ -200,6 +158,411 @@ e_xanthe_terra = {
 				color2={ 255 255 255 }
 				
 				b_schialan = {
+				}
+			}
+		}
+		d_dravotara = {
+			color={ 164 66 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 29 province_id = 30 province_id = 31 } }
+				}
+			}
+			capital = 29 # c_zetholon
+			
+			c_zetholon = { # 29
+				color={ 154 76 0 }
+				color2={ 255 255 255 }
+				
+				b_zetholon = {
+				}
+			}
+			c_heyera = { # 30
+				color={ 109 53 23 }
+				color2={ 255 255 255 }
+				
+				b_heyera = {
+				}
+			}
+			c_spenec_skait = { # 31
+				color={ 242 180 47 }
+				color2={ 255 255 255 }
+				
+				b_spenec_skait = {
+				}
+			}
+		}
+		d_giajolea = {
+			color={ 195 198 87 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 26 province_id = 27 province_id = 28 } }
+				}
+			}
+			capital = 26 # c_pluerana
+			
+			c_pluerana = { # 26
+				color={ 205 188 92 }
+				color2={ 255 255 255 }
+				
+				b_pluerana = {
+				}
+			}
+			c_skunia = { # 27
+				color={ 153 111 21 }
+				color2={ 255 255 255 }
+				
+				b_skunia = {
+				}
+			}
+			c_xyvis = { # 28
+				color={ 189 158 33 }
+				color2={ 255 255 255 }
+				
+				b_xyvis = {
+				}
+			}
+		}
+		d_methas = {
+			color={ 245 6 82 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 23 province_id = 24 province_id = 25 province_id = 35 } }
+				}
+			}
+			capital = 23 # c_keta
+			
+			c_keta = { # 23
+				color={ 255 252 87 }
+				color2={ 255 255 255 }
+				
+				b_keta = {
+				}
+			}
+			c_cialea = { # 24
+				color={ 133 101 14 }
+				color2={ 255 255 255 }
+				
+				b_cialea = {
+				}
+			}
+			c_huthosia = { # 35
+				color={ 255 120 47 }
+				color2={ 255 255 255 }
+				
+				b_huthosia = {
+				}
+			}
+			c_othiares = { # 25
+				color={ 218 162 12 }
+				color2={ 255 255 255 }
+				
+				b_othiares = {
+				}
+			}
+		}
+	}
+	k_ophira = {
+		color={ 193 178 72 }
+		color2={ 255 255 255 }
+		
+		capital = 32 # c_iaytro
+		culture = irish
+		
+		c_diomara = { # 39
+			color={ 172 135 71 }
+			color2={ 255 255 255 }
+			
+			b_diomara = {
+			}
+		}
+		c_igelar = { # 49
+			color={ 219 134 0 }
+			color2={ 255 255 255 }
+			
+			b_igelar = {
+			}
+		}
+		c_jekada = { # 42
+			color={ 211 225 93 }
+			color2={ 255 255 255 }
+			
+			b_jekada = {
+			}
+		}
+		c_khovalon = { # 48
+			color={ 233 169 68 }
+			color2={ 255 255 255 }
+			
+			b_khovalon = {
+			}
+		}
+		c_lephana = { # 40
+			color={ 237 172 59 }
+			color2={ 255 255 255 }
+			
+			b_lephana = {
+			}
+		}
+		c_merefade = { # 44
+			color={ 124 97 38 }
+			color2={ 255 255 255 }
+			
+			b_merefade = {
+			}
+		}
+		c_qroeblime = { # 43
+			color={ 213 170 77 }
+			color2={ 255 255 255 }
+			
+			b_qroeblime = {
+			}
+		}
+		c_slounarus = { # 50
+			color={ 237 217 182 }
+			color2={ 255 255 255 }
+			
+			b_slounarus = {
+			}
+		}
+		c_trezuta = { # 46
+			color={ 186 123 71 }
+			color2={ 255 255 255 }
+			
+			b_trezuta = {
+			}
+		}
+		c_vreles = { # 45
+			color={ 233 114 68 }
+			color2={ 255 255 255 }
+			
+			b_vreles = {
+			}
+		}
+		c_xontis = { # 47
+			color={ 140 94 21 }
+			color2={ 255 255 255 }
+			
+			b_xontis = {
+			}
+		}
+		c_yethen = { # 41
+			color={ 184 156 128 }
+			color2={ 255 255 255 }
+			
+			b_yethen = {
+			}
+		}
+		d_jochoria = {
+			color={ 213 158 82 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 32 province_id = 33 province_id = 34 } }
+				}
+			}
+			capital = 32 # c_iaytro
+			
+			c_iaytro = { # 32
+				color={ 223 148 87 }
+				color2={ 255 255 255 }
+				
+				b_iaytro = {
+				}
+			}
+			c_baulia = { # 34
+				color={ 165 145 64 }
+				color2={ 255 255 255 }
+				
+				b_baulia = {
+				}
+			}
+			c_jusholla = { # 33
+				color={ 137 86 46 }
+				color2={ 255 255 255 }
+				
+				b_jusholla = {
+				}
+			}
+		}
+		d_azhathe = {
+			color={ 196 113 76 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 46 province_id = 47 province_id = 48 } }
+				}
+			}
+			capital = 46 # c_trezuta
+			
+			c_trezuta = { # 46
+				color={ 186 123 71 }
+				color2={ 255 255 255 }
+				
+				b_trezuta = {
+				}
+			}
+			c_khovalon = { # 48
+				color={ 233 169 68 }
+				color2={ 255 255 255 }
+				
+				b_khovalon = {
+				}
+			}
+			c_xontis = { # 47
+				color={ 140 94 21 }
+				color2={ 255 255 255 }
+				
+				b_xontis = {
+				}
+			}
+		}
+		d_khinuric = {
+			color={ 229 124 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 49 province_id = 50 } }
+				}
+			}
+			capital = 49 # c_igelar
+			
+			c_igelar = { # 49
+				color={ 219 134 0 }
+				color2={ 255 255 255 }
+				
+				b_igelar = {
+				}
+			}
+			c_slounarus = { # 50
+				color={ 237 217 182 }
+				color2={ 255 255 255 }
+				
+				b_slounarus = {
+				}
+			}
+		}
+		d_kyrpateg = {
+			color={ 182 125 76 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 39 province_id = 40 province_id = 41 province_id = 42 } }
+				}
+			}
+			capital = 39 # c_diomara
+			
+			c_diomara = { # 39
+				color={ 172 135 71 }
+				color2={ 255 255 255 }
+				
+				b_diomara = {
+				}
+			}
+			c_jekada = { # 42
+				color={ 211 225 93 }
+				color2={ 255 255 255 }
+				
+				b_jekada = {
+				}
+			}
+			c_lephana = { # 40
+				color={ 237 172 59 }
+				color2={ 255 255 255 }
+				
+				b_lephana = {
+				}
+			}
+			c_yethen = { # 41
+				color={ 184 156 128 }
+				color2={ 255 255 255 }
+				
+				b_yethen = {
+				}
+			}
+		}
+		d_sespadan = {
+			color={ 205 91 44 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 36 province_id = 37 province_id = 38 } }
+				}
+			}
+			capital = 36 # c_oylea
+			
+			c_oylea = { # 36
+				color={ 195 101 39 }
+				color2={ 255 255 255 }
+				
+				b_oylea = {
+				}
+			}
+			c_qylare = { # 38
+				color={ 124 97 38 }
+				color2={ 255 255 255 }
+				
+				b_qylare = {
+				}
+			}
+			c_streloter = { # 37
+				color={ 213 170 77 }
+				color2={ 255 255 255 }
+				
+				b_streloter = {
+				}
+			}
+		}
+		d_utohinas = {
+			color={ 203 180 72 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 43 province_id = 44 province_id = 45 } }
+				}
+			}
+			capital = 43 # c_qroeblime
+			
+			c_qroeblime = { # 43
+				color={ 213 170 77 }
+				color2={ 255 255 255 }
+				
+				b_qroeblime = {
+				}
+			}
+			c_merefade = { # 44
+				color={ 124 97 38 }
+				color2={ 255 255 255 }
+				
+				b_merefade = {
+				}
+			}
+			c_vreles = { # 45
+				color={ 233 114 68 }
+				color2={ 255 255 255 }
+				
+				b_vreles = {
 				}
 			}
 		}

@@ -1,0 +1,8 @@
+bm_mars = {
+	name = "BM_MARS_ERA"
+	desc = "BM_MARS_ERA_INFO"
+	date = 3500.1.1
+	
+	era = yes						## Will be shown on Era screen.
+	picture = GFX_pick_era_image_1
+	
